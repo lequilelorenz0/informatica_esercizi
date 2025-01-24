@@ -23,10 +23,10 @@ int numero_cifre(int numero) {
         scanf("%d", &numero);
     }
 
-    int count = 0;
+    int cont = 0;
     while (numero > 0) {
         numero=numero/10; // Rimuovo l'ultima cifra
-        count++;
+        cont++;
     }
-    return count;
+    return cont;
 }
