@@ -6,7 +6,7 @@ int mcd(int a, int b);
 int somma_divisori(int numero);
 void menu();
 
-// Funzione principale
+
 int main() {
     menu(); // Avvia il menu
     return 0;
