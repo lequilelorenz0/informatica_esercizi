@@ -1,28 +1,31 @@
 #include <stdio.h>
 
-// Prototipo della funzione
-float area_rettangolo(float x, float y);
+
+void fibonacci(int n) {
+    int num1 = 0, num2 = 1, terminesucc;
+    
+    printf("Sequenza di Fibonacci fino a %d termini:\n", n);
+    for (int i = 1; i <= n; i++) {
+        printf("%d ", num1);
+        terminesucc = num1 + num2;
+        num1 = num2;
+        num2 = terminesucc;
+    }
+    
+}
 
 int main() {
-    float base, altezza, area;
-
+    int num;
     
-    printf("Inserisci la base del rettangolo: ");
-    scanf("%f", &base);
-
-    printf("Inserisci l'altezza del rettangolo: ");
-    scanf("%f", &altezza);
-
-    // Calcolo dell'area
-    area = area_rettangolo(base, altezza);
-
-    // Output del risultato
-    printf("L'area del rettangolo è: %.2f\n", area);
-
+    printf("Inserisci un numero intero: ");
+    scanf("%d", &num);
+    
+    if (num <= 0) {
+        printf("Inserire un numero intero positivo.\n");
+    } else {
+        fibonacci(num);
+    }
+    
     return 0;
 }
 
-// Definizione della funzione
-float area_rettangolo(float base, float altezza) {
-    return base * altezza;
-}
