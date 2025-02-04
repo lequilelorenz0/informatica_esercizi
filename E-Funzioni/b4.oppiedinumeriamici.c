@@ -15,10 +15,10 @@ int sommaDivisori(int numero) {
 }
 
 // Funzione che trova e stampa le coppie di numeri amici nel range 0-1500
-void NumeriAmici(int limite) {
-    for (int i = 1; i <= limite; i++) {
+void NumeriAmici(int max) {
+    for (int i = 1; i <= max; i++) {
         int somma_i = sommaDivisori(i);
-        if (somma_i > i && somma_i <= limite) {  // Evita duplicati e numeri fuori range
+        if (somma_i > i && somma_i <= max) {  // Evita duplicati e numeri fuori range
             int somma_somma_i = sommaDivisori(somma_i);
             if (somma_somma_i == i) {  // Verifica se i e somma_i sono numeri amici
                 printf("Coppia di numeri amici: %d e %d\n", i, somma_i);
