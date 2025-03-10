@@ -1,6 +1,11 @@
 /** ****************************************************************************************
 * \mainpage "array_a2"
-* @brief esercizi sugli array 
+* @brief Inizializzazione da Input e Somma
+Dichiari un array di 10 float
+Chieda all'utente di inserire i valori nell'array
+Calcoli e visualizzi la somma di tutti gli elementi
+Calcoli e visualizzi la media aritmetica degli elementi
+ 
 * 
 * @author Lorenzo Lequile
 * @version 1.0 10/03/25 versione iniziale
