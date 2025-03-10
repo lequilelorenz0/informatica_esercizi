@@ -50,12 +50,12 @@ void copia_pari(int v1[],int v2[])
     {
         if(v1[i] % 2 == 0 )
         {
-            v2[i]=v1[i]
+            v2[i]=v1[i];
         
         }
         else 
         {
-            v2[i]=0;}
+            v2[i]=0};
         }
     }
 }
