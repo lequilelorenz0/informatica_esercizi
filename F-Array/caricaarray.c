@@ -2,8 +2,8 @@
 #define N 7
 void carica_array(int v []);
 void stampa_array(int v []);
-float calcola_media(int v []);   
-void copia_pari(int v1[],int v2[]);       
+float calcola_media(int v[]);
+     
 int main()
 {
 int voti[N];
@@ -55,7 +55,7 @@ void copia_pari(int v1[],int v2[])
         }
         else 
         {
-            v2[i]=0};
+            v2[i]=0;
         }
     }
 }
