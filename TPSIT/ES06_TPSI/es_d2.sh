@@ -19,18 +19,21 @@ fi
 numero_righe=$1
 
 # Stampa del triangolo 
-i=$numero_righe
+i=0;
 # Ciclo while per il numero di righe
-while [ $i -gt 0 ]; do
+while [ $i -ge 1 ]; do
     j=$i
     # Ciclo interno per stampare gli asterischi nella riga corrente
-    while [ $j -gt 0 ]; do
+    while [ $j -gt 1 ]; do
         echo -n "*" # Stampa un asterisco 
-        j=$((j - 1)) # Decrementa il contatore interno
+        j=$((j + 1)) # Decrementa il contatore interno
     done
     echo # Va a capo dopo aver stampato tutti gli asterischi della riga corrente
-    i=$((i - 1)) # Decrementa il contatore delle righe
+
+    i=$((i + 1)) # Decrementa il contatore delle righe
+    echo 
 done
+
 
 
 
