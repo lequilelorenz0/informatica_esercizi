@@ -17,8 +17,8 @@ void carica_array(int v[])
     int i;
     for(i=0;i<N;i++)
     {
-        printf("dammi un numero da inserire");
-        scanf("%d",&v[i]);
+        
+        v[i] = rand() % N;
     }
 }
 void stampa_array(int v[])
